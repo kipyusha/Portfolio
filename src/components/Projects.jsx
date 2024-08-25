@@ -37,14 +37,16 @@ const Projects = () => {
             >
               <h6 className="mb-2 font-semibold">{project.title}</h6>
               <p className="mb-4 text-neutral-400">{project.description}</p>
+              <div className="flex flex-wrap mr-2 mt-4 gap-2">
               {project.technologies.map((tech, index) => (
                 <span
                   key={index}
-                  className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-900"
+                  className="rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-900"
                 >
                   {tech}
                 </span>
               ))}
+              </div>
             </motion.div>
           </div>
         ))}
