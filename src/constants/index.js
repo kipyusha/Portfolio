@@ -1,8 +1,10 @@
 import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
-
+import projectImg from "../assets/projects/projectImg.png";
+import projectVK from "../assets/projects/projectVK.png";
+import projectBot from "../assets/projects/projectBot.png";
+import projectVector from "../assets/projects/projectVector.png";
 export const HERO_CONTENT = `Я Frontend разработчик, обладающий навыками создания надежных и масштабируемых веб-приложений. Имея 2-летний практический опыт, я отточил свои навыки в таких интерфейсных технологиях, как React и Next.js, а также в серверных технологиях, таких как Node.js, MySQL, PostgreSQL. Моя цель - использовать свой опыт для создания инновационных решений, которые стимулируют рост бизнеса и обеспечивают исключительный пользовательский опыт.`;
 
 export const ABOUT_TEXT = `Я целеустремленный и разносторонний разработчик, увлеченный созданием эффективных и удобных в использовании веб-приложений. Имея 2-летний опыт, я работал с различными технологиями, включая React, Next.js, Node.js, MySQL, PostgreSQL. Мой путь в веб-разработке начался с глубокого любопытства к тому, как все устроено, и превратился в карьеру, в которой я постоянно стремлюсь учиться и адаптироваться к новым вызовам. Я преуспеваю в совместной работе и получаю удовольствие от решения сложных задач для получения высококачественных решений. Помимо программирования, мне нравится оставаться активным, изучать новые технологии и вносить свой вклад в проекты с открытым исходным кодом.`;
@@ -55,11 +57,35 @@ export const PROJECTS = [
     technologies: ["HTML", "CSS", "React", "Bootstrap"],
   },
   {
-    title: "Blogging Platform",
-    image: project4,
+    title: "Новостное веб-приложение",
+    image: projectVector,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      "Разработка новостного веб-проекта, для автошколы. Проект создавался в команде, проект является первым в моей разработке.",
+    technologies: ["HTML", "CSS", "React.js", "php", "mySQL"],
+  },
+];
+
+export const OTHERPROJECTS = [
+  {
+    title: "Скрипт для генерации изображений по шаблону",
+    image: projectImg,
+    description:
+      "Проект написан для компании по продажам автомобильных ковриков. Для них необходимо было написать скрипт, который будет по шаблону генерировать более 1 000 изображений. Скрипт написан на Python с использованием Гугл таблицы, в которой находились наименования и ссылки на изображения. Запуск происходил через .bat файл, для удобства использования, так же были отдельно вынесены все необходимые переменные, для изменения шрифтов,путей,координат и т.п.",
+    technologies: ["Python", "Google Sheets", "Pillow"],
+  },
+  {
+    title: "Скрипт для вывода статистики из Рекламного кабинета Вконтакте (API)",
+    image: projectVK,
+    description:
+      "Для рекламнной компании необходимо было написать скрипт на Python, который по API запросу будет выводить необходимую статистику из Рекламного кабинета. Скрипт используется в Telegram боте.",
+    technologies: ["Python", "API"],
+  },
+  {
+    title: "Telegram bot",
+    image: projectBot,
+    description:
+      "Необходимо было написать бота на Python, который ранее работал на шаблоном проекте Salebot. В проекте происходило оформление подписки на клуб. Использовалась платежная система Tinkoff API. Так же необходимо было сделать систему промокодов для скидки на подписку. Деплой бота на сервер.",
+    technologies: ["Python", "API", "MySql"],
   },
 ];
 
